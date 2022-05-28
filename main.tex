@@ -1,0 +1,30 @@
+\documentclass[11pt]{article}
+
+
+\input{Setup/macros} % configuration tex file
+\makeindex
+
+
+
+\begin{document}
+
+%%%%% COVER PAGE
+\input{Setup/cover page}
+
+%%%%% ABSTRACT
+\input{Chapters/Abstract}
+\clearpage
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+%%%%% CHAPTERS
+\input{Chapters/Intro}
+
+
+\clearpage
+\bibliography{ref.bib}
+
+
+\end{document}

@@ -1,0 +1,52 @@
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{geometry}
+\usepackage{fancyhdr} % header and footer
+\usepackage{graphicx} % insert fig
+\usepackage{pdfpages} % insert pdf
+\usepackage{multicol} % muti-column
+\usepackage{multirow} 
+\usepackage{setspace} % line spacing
+\usepackage{makeidx} % index
+\usepackage{tikz} % plot env
+\usepackage{indentfirst} % \chapter、\section indentation for the first line
+\usepackage{caption,subcaption}  % title and subtitle
+\usepackage{amsmath,amsthm,amssymb,amsfonts,mathrsfs} % math
+\usepackage{siunitx}  % SI unit
+\usepackage{pifont} % special symbol
+\usepackage{hyperref} % link
+\usepackage{cleveref}
+\usepackage{booktabs} % three line table
+\usepackage{tabularx} % three line table
+\usepackage{longtable}
+\usepackage[ruled,linesnumbered]{algorithm2e}  % algorithm
+\usepackage[shortlabels]{enumitem} % list env
+\usepackage{xcolor} % font color
+\usepackage{graphbox} % figure position
+\usepackage{minted} % code style
+% \usepackage{listings} % code style (not recommended)
+\usepackage{environ}
+\usepackage{mdframed}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{blindtext}
+
+
+\usepackage[round]{natbib} % bib - authoryear
+\bibliographystyle{ieeetr} %  plainnat
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\textbf{\leftmark}}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{1.5pt}
+\renewcommand{\footrulewidth}{1.5pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{statement}[2][Statement]
+    {\begin{mdframed}[backgroundcolor=gray!10] \textbf{#1 #2} \\}
+    {\end{mdframed}}
